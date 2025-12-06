@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleText(id) {
+            const block = document.getElementById(id);
+            block.style.display = block.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="logo">LOGIKA</div>
+    <button class="lesson-btn" onclick="location.href='https://meet.google.com/qow-njcn-nbq'">Онлайн урок</button>
+</header>
+
+<main>
+
+    <div class="section">
+        <h2>Урок 1 — Основні теги</h2>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t1_1')">1</button>
+            <span class="item-title">&lt;html&gt;</span>
+            <div class="hidden-text" id="t1_1">Визначає кореневий елемент HTML-документа. Усі інші елементи мають бути всередині цього тегу.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t1_2')">2</button>
+            <span class="item-title">&lt;head&gt;</span>
+            <div class="hidden-text" id="t1_2">Містить службову інформацію про сторінку: назву, стилі, скрипти, метадані. Не відображається на екрані.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t1_3')">3</button>
+            <span class="item-title">&lt;meta&gt;</span>
+            <div class="hidden-text" id="t1_3">Тег для метаінформації: кодування тексту, опис сторінки, ключові слова, адаптивність.</div>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2>Урок 2 — Структура сторінки</h2>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t2_1')">1</button>
+            <span class="item-title">&lt;body&gt;</span>
+            <div class="hidden-text" id="t2_1">Містить весь вміст сторінки, який бачить користувач: текст, картинки, кнопки, таблиці.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t2_2')">2</button>
+            <span class="item-title">&lt;h1&gt; – &lt;h6&gt;</span>
+            <div class="hidden-text" id="t2_2">Заголовки різного рівня. &lt;h1&gt; — найголовніший, &lt;h6&gt; — найменший.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t2_3')">3</button>
+            <span class="item-title">&lt;title&gt;</span>
+            <div class="hidden-text" id="t2_3">Визначає назву вкладки браузера. Не відображається в тексті сторінки.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Урок 3 — Текстові теги</h2>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t3_1')">1</button>
+            <span class="item-title">&lt;p&gt;</span>
+            <div class="hidden-text" id="t3_1">Визначає абзац тексту. Використовується найчастіше для основного текстового контенту.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t3_2')">2</button>
+            <span class="item-title">&lt;br&gt;</span>
+            <div class="hidden-text" id="t3_2">Робить перенос рядка. Не створює новий абзац, лише перенос.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t3_3')">3</button>
+            <span class="item-title">&lt;strong&gt;</span>
+            <div class="hidden-text" id="t3_3">Виділяє важливий текст, робить його жирним і логічно значущим.</div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t3_4')">4</button>
+            <span class="item-title">&lt;em&gt;</span>
+            <div class="hidden-text" id="t3_4">Виділяє текст курсивом і підкреслює його важливість.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Урок 4 — Зображення та посилання</h2>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t4_1')">1</button>
+            <span class="item-title">&lt;img&gt;</span>
+            <div class="hidden-text" id="t4_1">Додає зображення на сторінку. Потрібен атрибут src для вказання шляху.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t4_2')">2</button>
+            <span class="item-title">&lt;a&gt;</span>
+            <div class="hidden-text" id="t4_2">Створює посилання. Атрибут href задає адресу переходу.</div>
+        </div>
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t4_3')">3</button>
+            <span class="item-title">&lt;button&gt;</span>
+            <div class="hidden-text" id="t4_3">Створює кнопку. Може виконувати функції через JavaScript.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Урок 5 — Блокові елементи</h2>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t5_1')">1</button>
+            <span class="item-title">&lt;div&gt;</span>
+            <div class="hidden-text" id="t5_1">Контейнер для групування елементів. Часто використовується в розмітці.</div>
+        </div>
+
+        <div class="item">
+            <button class="circle-btn" onclick="toggleText('t5_2')">2</button>
+            <span class="item-title">&lt;span&gt;</span>
+            <div class="hidden-text" id="t5_2">Використовується для виділення частини тексту або inline-елементів.</div>
+        </div>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <a href="https://logikaschool.com/">Оригінальний сайт</a>
+</footer>
+
+</body>
+</html>
